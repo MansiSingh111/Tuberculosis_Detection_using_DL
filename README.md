@@ -1,13 +1,13 @@
 # 🫁 Tuberculosis Detection from Chest X‑ray Images
 
-An end‑to‑end deep learning project to detect Tuberculosis (TB) from chest X‑ray images using a fine‑tuned ResNet model and an interactive Streamlit web app for image upload and prediction.[web:94][web:98]
+An end‑to‑end deep learning project to detect Tuberculosis (TB) from chest X‑ray images using a fine‑tuned ResNet model and an interactive Streamlit web app for image upload and prediction.
 
 ---
 
 ## 🚀 Project Overview
 
 Tuberculosis remains a major global health challenge, and chest X‑rays are a common, low‑cost screening tool.
-This project uses transfer learning on a ResNet‑based convolutional neural network to classify chest X‑ray images as **TB** or **Normal**, then serves the model through a **Streamlit** web interface for easy experimentation and demonstration.[web:94][web:108]
+This project uses transfer learning on a ResNet‑based convolutional neural network to classify chest X‑ray images as **TB** or **Normal**, then serves the model through a **Streamlit** web interface for easy experimentation and demonstration.
 
 **Key features:**
 
