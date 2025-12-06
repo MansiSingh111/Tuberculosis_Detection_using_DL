@@ -1,17 +1,17 @@
 # 🫁 Tuberculosis Detection from Chest X‑ray Images
 
-An end‑to‑end deep learning project to detect Tuberculosis (TB) from chest X‑ray images using a fine‑tuned ResNet model and an interactive Streamlit web app for image upload and prediction.
+An end‑to‑end deep learning project to detect Tuberculosis (TB) from chest X‑ray images using a fine‑tuned VGG16 model and an interactive Streamlit web app for image upload and prediction.
 
 ---
 
 ## 🚀 Project Overview
 
 Tuberculosis remains a major global health challenge, and chest X‑rays are a common, low‑cost screening tool.
-This project uses transfer learning on a ResNet‑based convolutional neural network to classify chest X‑ray images as **TB** or **Normal**, then serves the model through a **Streamlit** web interface for easy experimentation and demonstration.
+This project uses transfer learning on a VGG16‑based convolutional neural network to classify chest X‑ray images as **TB** or **Normal**, then serves the model through a **Streamlit** web interface for easy experimentation and demonstration.
 
 **Key features:**
 
-- 🧠 Fine‑tuned ResNet (binary classifier: TB vs Normal)  
+- 🧠 Fine‑tuned VGG16 (binary classifier: TB vs Normal)  
 - 📊 Training & validation on processed chest X‑ray dataset  
 - 📈 Evaluation using accuracy, precision, recall, and F1‑score  
 - 🌐 Streamlit web app with two pages: project intro + image prediction  
@@ -23,17 +23,17 @@ This project uses transfer learning on a ResNet‑based convolutional neural net
 
 ## 🧠 Model & Training
 
-- **Backbone:** ResNet (e.g., ResNet18) with the final fully‑connected layer replaced by a 2‑class output (TB, Normal). 
+- **Backbone:** VGG16 with the final fully‑connected layer replaced by a 2‑class output (TB, Normal). 
 - **Input:** Preprocessed RGB chest X‑ray images resized to \(224 \times 224\) and normalized with ImageNet statistics.
 - **Loss:** Binary / cross‑entropy loss.  
 - **Metrics:** Accuracy, precision, recall, F1‑score on a held‑out validation or test set.  
 
-The training pipeline (in `tb_detection.ipynb`) typically includes:
+The training pipeline (in `tb_detection_project.ipynb`) typically includes:
 
 1. Loading and splitting the dataset into train/validation (and optionally test).  
 2. Applying transforms: resize, normalization, and optional augmentation.  
-3. Fine‑tuning the ResNet model for several epochs.  
-4. Saving the best checkpoint as `tb_resnet_final.pth` for deployment.
+3. Fine‑tuning the VGG16 model for several epochs.  
+4. Saving the best checkpoint as `tb_vgg_model.pth` for deployment.
 
 ---
 
